@@ -7,7 +7,7 @@
 
 ## 代码：
 ### （1）选择合适的传感器，代码中含有两款温湿度传感器的实例：TH11S_B和CWS21，并且PLATFORM_DEF支持平台向minirtu下发任意的MODBUS指令。如果要自定义传感器，需要参考\APP\uartSensor\uartSensor.c中void RS485_Sensor_Transmit(void)函数的一些实例，构造向传感器下发的指令，并在void app_ProcessSensorTask(void *p_arg) 函数中，参考实例，解析传感器返回的报文并构造JSON上传给服务器
-### (2)设置休眠时间，minirtu每工作60秒，会休眠一段时间，以此来实现间歇采集、延长待机时间。休眠的时间长度由SLEEP_TIME_SECONDS_DEFALT决定，单位是秒
+###  (2)设置休眠时间，minirtu每工作60秒，会休眠一段时间，以此来实现间歇采集、延长待机时间。休眠的时间长度由SLEEP_TIME_SECONDS_DEFALT决定，单位是秒
 
 ## 编译：
-keil5.25.0
+### keil5.25.0
